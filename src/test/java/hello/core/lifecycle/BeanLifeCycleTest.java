@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 public class BeanLifeCycleTest {
     @Test
     public void lifeCycleTest(){
-
         ConfigurableApplicationContext ac = new AnnotationConfigApplicationContext(LifeCycleConfig.class);
         NetworkClient client = ac.getBean(NetworkClient.class);
         ac.close();
